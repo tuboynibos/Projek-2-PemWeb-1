@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Booking Kendaraan</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+</head>
+
+<body>
+
+  <div class="header_section">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"
+          ><img src="images/logo.png"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            
+              <a class="nav-link" href="index.html">Home</a>
+            
+            
+              <a class="nav-link" href="about.html">Tentang Kami</a>
+            
+            
+              <a class="nav-link" href="services.html">Syarat & Ketentuan</a>
+            
+            
+              <a class="nav-link" href="gallery.html">Armada</a>
+            
+            
+              <a class="nav-link" href="contact.html">Contact</a>
+            
+            
+              <a class="nav-link" href="../login/login.html">Login/Regist</a>
+            
+          </ul>
+          <form class="form-inline my-2 my-lg-0"></form>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+    <form>
+            <legend>Booking Kendaraan</legend>
+            <div class="form-group row mt-2 ml-2 mr-2">
+                <label for="pilih" class="col-4 col-form-label">Pilih Kendaraan</label>
+                <div class="col-8">
+                    <select id="pilih" name="pilih" class="custom-select">
+                        <option value="minibus">Minibus</option>
+                        <option value="sports">Sports Car</option>
+                        <option value="car">Car</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row mt-2 ml-2 mr-2">
+                <label for="nama" class="col-4 col-form-label">Nama Peminjam :</label>
+                <div class="col-8">
+                    <input id="nama" name="nama" placeholder="Masukkan Nama Anda" type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group row mt-2 ml-2 mr-2">
+                <label class="col-4 col-form-label">Kategori Peminjam :</label>
+                <div class="col-8">
+                    <div class="form-group">
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input name="kategori" id="kategori_0" type="radio" class="custom-control-input" value="pribadi">
+                            <label for="kategori_0" class="custom-control-label">Pribadi</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input name="kategori" id="kategori_1" type="radio" class="custom-control-input"
+                                value="perusahaan">
+                            <label for="kategori_1" class="custom-control-label">Perusahaan/Organisasi</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row mt-2 ml-2 mr-2">
+                <label for="deskripsi" class="col-4 col-form-label">Deskripsi Kebutuhan :</label>
+                <div class="col-8">
+                    <textarea id="deskripsi" name="deskripsi" cols="40" rows="2" class="form-control"></textarea>
+                  </div>
+                  </div>
+                  <div class="form-group row mt-2 ml-2 mr-2">
+                  <label for="tanggal" class="col-4 col-form-label">Tanggal Pinjam :</label>
+                  <div class="col-8">
+                  <input id="tanggal" name="tanggal" type="date" class="form-control">
+                  </div>
+                  </div>
+                  <div class="form-group row mt-2 ml-2 mr-2">
+                  <label for="kontak" class="col-4 col-form-label">Kontak Person :</label>
+                  <div class="col-8">
+                  <input id="kontak" name="kontak" type="text" class="form-control">
+                  </div>
+                  </div>
+                  <div class="form-group row mt-2 ml-2 mr-2">
+                  <label for="telpon" class="col-4 col-form-label">Telpon/Hp :</label>
+                  <div class="col-8">
+                  <input id="telpon" name="telpon" type="number" class="form-control">
+                  </div>
+                  </div>
+                  <div class="form-group row mt-2 ml-2 mr-2">
+                  <label for="email" class="col-4 col-form-label">Email :</label>
+                  <div class="col-8">
+                  <input id="email" name="email" type="email" class="form-control">
+                  </div>
+                  </div>
+                  <div class="form-group row mt-2 ml-2 mr-2">
+                  <div class="offset-4 col-8">
+                  <button name="submit" type="submit" class="btn btn-success">Submit</button>
+                  <button name="reset" type="reset" class="btn btn-danger">Reset</button>
+                  </div>
+                  </div>
+                  </form>
+                  <!-- Javascript files-->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery-3.0.0.min.js"></script>
+<script src="js/plugin.js"></script>
+<!-- sidebar -->
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
